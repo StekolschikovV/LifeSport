@@ -1,0 +1,165 @@
+@import ../const.sass
+
+
+.content
+    margin-top: 25px
+    .col-lg-4      
+        // padding: 0
+        .chat
+            height: 400px
+            .header
+                background: $blue
+                padding: 10px
+                text-transform: uppercase
+                color: white
+                font-weight: bold
+            .message
+                height: 100%
+                max-height: 100%
+                .show-message
+                    height: 310px 
+                    overflow-y: scroll
+                    width: 100%
+                    &::-webkit-scrollbar
+                        width: 2px
+                        height: 2px
+                    &::-webkit-scrollbar-button
+                        width: 0px
+                        height: 0px
+                    &::-webkit-scrollbar-thumb
+                        background: $blue
+                        border: 0px none #ffffff
+                    &:hover
+                        background: #ffffff
+                    &:active
+                        background: #000000
+                    &:hover, &:active
+                        background: #ffffff
+                    .show-message-container
+                        height: 500px
+                        width: 100%
+                .add-message
+                    height: 10%
+                    min-height: 50px
+                    width: 100%
+                    background: rgba(226, 226, 226, 0.32)
+                    display: flex
+                    align-items: center
+                    justify-content: space-around
+                    button
+                        width: 20px
+                        height: 20px
+                        background-image: url(./img/smile.svg)
+                        background-position: center
+                        background-size: cover
+                        background-repeat: no-repeat
+                        border: 0
+                        background-color: transparent
+                    input[type="text"]
+                        width: 60%
+                        border: 0
+                        background: transparent
+                        border-bottom: 1px solid darkgrey
+                    .length
+                        color: darkgrey
+                        width: 50px
+                        text-align: center
+                    input[type="submit"]
+                        width: 20px
+                        height: 20px
+                        background-image: url(./img/send-button.svg)
+                        background-position: center
+                        background-size: cover
+                        background-repeat: no-repeat
+                        border: 0
+                        background-color: transparent
+    .col-lg-8
+        // padding: 0 0 0 20px 
+        color: white        
+        .video
+            width: 100%
+            height: 400px
+            background: black
+            position: relative
+            .line
+                width: 97%
+                right: 0
+                left: 0
+                margin: auto
+                background: $blue
+                height: 2px
+                position: absolute
+                bottom: 45px
+                border-radius: 90% 
+                overflow: hidden 
+            .controls
+                position: absolute 
+                width: 100%
+                bottom: 0
+                display: flex
+                justify-content: space-between      
+                .left
+                    display: flex
+                    align-items: center
+                    padding: 10px 
+                    .play
+                        width: 20px
+                        height: 20px
+                        background-image: url(./img/play-button.svg)
+                        background-position: center
+                        background-size: cover
+                        background-repeat: no-repeat
+                        border: 0
+                        margin-right: 10px   
+                    .sound
+                        width: 20px
+                        height: 20px
+                        background-image: url(./img/speaker.svg)
+                        background-position: center
+                        background-size: cover
+                        background-repeat: no-repeat
+                        border: 0
+                        margin-right: 10px
+                    .on-air
+                        .circle
+                            width: 10px
+                            height: 10px
+                            background: red
+                            border-radius: 50%     
+                            display: inline-flex
+                            margin-right: 10px      
+                .right
+                    display: flex
+                    align-items: center
+                    .logo
+                        width: 20px
+                        height: 20px
+                        background-image: url(./img/logo-min.png)
+                        background-position: center
+                        background-size: cover
+                        background-repeat: no-repeat
+                        border: 0
+                        margin-right: 10px
+                    .hd 
+                        margin-right: 10px
+                    .fullScreen
+                        width: 20px
+                        height: 20px
+                        background-image: url(./img/full-screen.svg)
+                        background-position: center
+                        background-size: cover
+                        background-repeat: no-repeat
+                        border: 0
+                        margin-right: 10px
+                        
+@media(min-width: 992px)
+    .content 
+        .col-lg-4      
+            padding: 0
+        .col-lg-8
+            padding: 0 0 0 20px  
+
+@media(max-width: 720px)
+    .content 
+        .chat
+            margin-top: 20px     

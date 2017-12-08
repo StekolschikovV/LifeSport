@@ -14,7 +14,7 @@ section.container.content
                                     .text Когда будут ность хот-доги?
                             .mess
                                 .left
-                                    .ava(style='background-image: url(./img/avatars/bart.jpg);')
+                                    .ava(style='background-image: url(./img/avatars/bart.jpg);' )
                                 .right
                                     .name Bart S. 
                                     .text Их уже носили!!! )))
@@ -39,18 +39,18 @@ section.container.content
                     form.add-message
                         button
                             .smilies-container
-                                img(src="./img/smilies/cool.svg")
-                                img(src="./img/smilies/crying.svg")
-                                img(src="./img/smilies/girl.svg")
-                                img(src="./img/smilies/happy.svg")
-                                img(src="./img/smilies/kiss.svg")
-                                img(src="./img/smilies/muted.svg")
-                                img(src="./img/smilies/nervous.svg")
-                                img(src="./img/smilies/sad.svg")
-                                img(src="./img/smilies/sick.svg")
-                                img(src="./img/smilies/surprised.svg")
-                                img(src="./img/smilies/tongue.svg")
-                                img(src="./img/smilies/wink.svg")
+                                img(src="./img/smilies/cool.svg" onclick="chat.addSmile('cool')")
+                                img(src="./img/smilies/crying.svg" onclick="chat.addSmile('crying')")
+                                img(src="./img/smilies/girl.svg" onclick="chat.addSmile('girl')")
+                                img(src="./img/smilies/happy.svg" onclick="chat.addSmile('happy')")
+                                img(src="./img/smilies/kiss.svg" onclick="chat.addSmile('kiss')")
+                                img(src="./img/smilies/muted.svg" onclick="chat.addSmile('muted')")
+                                img(src="./img/smilies/nervous.svg" onclick="chat.addSmile('nervous')")
+                                img(src="./img/smilies/sad.svg" onclick="chat.addSmile('sad')")
+                                img(src="./img/smilies/sick.svg" onclick="chat.addSmile('sick')")
+                                img(src="./img/smilies/surprised.svg" onclick="chat.addSmile('surprised')")
+                                img(src="./img/smilies/tongue.svg" onclick="chat.addSmile('tongue')")
+                                img(src="./img/smilies/wink.svg" onclick="chat.addSmile('wink')")
                         input(type="text" maxlength="200" )
                         .length
                             span 

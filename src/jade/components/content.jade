@@ -1,6 +1,26 @@
 section.container.content
     .row
-        .col-lg-4.flex-last.flex-md-unordered
+        .col-lg-8
+            .video
+                .info-block
+                    .logo(style='background-image: url(./img/rea-logo.png);')
+                    .name Манчестер
+                    .count 5 - 7
+                    .name Днамо(Киев)
+                    .logo(style='background-image: url(./img/dinamo-logo.png);')
+                .line
+                .controls
+                    .left
+                        .play
+                        .sound
+                        .on-air
+                            span.circle
+                            | В ЭФИРЕ
+                    .right
+                        .logo
+                        .hd HD
+                        .fullScreen
+        .col-lg-4
             .chat 
                 .header Чат трансляции(90 человек):
                 .message
@@ -56,23 +76,3 @@ section.container.content
                             span 
                             | /200
                         input(type="submit", value="")
-        .col-lg-8.flex-first.flex-md-unordered
-            .video
-                .info-block
-                    .logo(style='background-image: url(./img/rea-logo.png);')
-                    .name Манчестер
-                    .count 5 - 7
-                    .name Днамо(Киев)
-                    .logo(style='background-image: url(./img/dinamo-logo.png);')
-                .line
-                .controls
-                    .left
-                        .play
-                        .sound
-                        .on-air
-                            span.circle
-                            | В ЭФИРЕ
-                    .right
-                        .logo
-                        .hd HD
-                        .fullScreen

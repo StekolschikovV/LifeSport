@@ -5,26 +5,13 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="style.css")
-        title Document
+        title SportLife
     body
-    
-        .modal-window 
-            .menu-block
-                .logo 
-                    img(src="./img/logo.png")
-                nav
-                    a(href="#") Главная
-                    a(href="#") Новости
-                    a(href="#") Рассписание
-                    a(href="#") Каталоги
-                    a(href="#") Регистрация
-                    a(href="#") Вход
 
         include ./components/header.jade
         include ./components/content.jade
         include ./components/timetable.jade
         include ./components/footer.jade
+        include ./components/modal.jade
         
-
-
         script(src="script.js")

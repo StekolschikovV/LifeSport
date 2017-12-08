@@ -7,7 +7,7 @@ class Modal{
             this.toggleModal()
         }
         document.querySelector('.modal-window').onclick = (e) => {
-            if(e.toElement.classList.value == 'modal-window show-modal')
+            if(e.toElement.classList.value == 'modal-window show-modal' || e.toElement.classList.value == 'close')
                 this.toggleModal()
         }
     }

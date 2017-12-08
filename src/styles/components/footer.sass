@@ -1,0 +1,41 @@
+@import ../const.sass
+
+footer
+    margin-top: 50px
+    .col-md-12
+        color: white
+        .bg
+            background: $blue
+            width: 100%
+            display: flex
+            justify-content: space-between
+            padding: 10px 25px
+            flex-wrap: wrap
+            hr
+                margin-top: 1rem
+                border: 0
+                border-top: 1px solid #a9a9a9
+                width: 100%
+            .colum
+                list-style: none
+                border-left: 1px solid #a9a9a9
+                padding: 0 25px
+                li
+                    padding: 0
+                    margin: 0
+                    a
+                        color: white
+            .logo
+                display: block
+                margin: 20px 0
+                color: white
+            nav
+                padding-bottom: 20px
+                a
+                    margin-right: 25px
+                    text-transform: uppercase
+                    color: white
+@media(max-width: 720px)
+    footer
+        nav
+            display: grid

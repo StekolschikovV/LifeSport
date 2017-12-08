@@ -7,8 +7,24 @@ html(lang="en")
         link(rel="stylesheet", href="style.css")
         title Document
     body
+    
+        .modal-window 
+            .menu-block
+                .logo 
+                    img(src="./img/logo.png")
+                nav
+                    a(href="#") Главная
+                    a(href="#") Новости
+                    a(href="#") Рассписание
+                    a(href="#") Каталоги
+                    a(href="#") Регистрация
+                    a(href="#") Вход
+
         include ./components/header.jade
         include ./components/content.jade
         include ./components/timetable.jade
         include ./components/footer.jade
+        
+
+
         script(src="script.js")

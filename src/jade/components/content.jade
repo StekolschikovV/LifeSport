@@ -6,7 +6,6 @@ section.container.content
                 .message
                     .show-message
                         .show-message-container 
-
                             .mess
                                 .left
                                     .ava(style='background-image: url(./img/avatars/homer.jpg);')
@@ -52,8 +51,10 @@ section.container.content
                                 img(src="./img/smilies/surprised.svg")
                                 img(src="./img/smilies/tongue.svg")
                                 img(src="./img/smilies/wink.svg")
-                        input(type="text")
-                        .length 0/200
+                        input(type="text" maxlength="200" )
+                        .length
+                            span 
+                            | /200
                         input(type="submit", value="")
         .col-lg-8.flex-first.flex-md-unordered
             .video
